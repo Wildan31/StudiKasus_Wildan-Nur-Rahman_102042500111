@@ -1,0 +1,130 @@
+ /* 6. HTML Background/Color Text & 8. HTML Font */
+body {
+  /* Menggunakan gradasi lembut agar tidak terlalu polos */
+  background: linear-gradient(135deg, #fdfbfb 0%, #e2d1c3 100%);
+  color: #2b2d42;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+
+  /* 7. HTML Align */
+  text-align: center;
+}
+
+.container {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 40px 20px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  /* Memberikan bayangan yang lebih halus dan luas */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Membuat foto menjadi lingkaran dengan aksen marun */
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #9b2226; /* Aksen merah marun */
+  box-shadow: 0 6px 15px rgba(155, 34, 38, 0.2);
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 32px;
+  color: #9b2226; /* Aksen merah marun */
+  margin-bottom: 5px;
+  letter-spacing: 0.5px;
+}
+
+h2 {
+  font-size: 15px;
+  color: #6c757d;
+  font-weight: 500;
+  margin-bottom: 35px;
+  line-height: 1.5;
+}
+
+h3 {
+  font-size: 20px;
+  color: #2b2d42;
+  margin-top: 45px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+/* Susunan ikon sosial media sejajar */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Bentuk lingkaran untuk ikon sosial media */
+.social-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  color: #9b2226; /* Aksen merah marun */
+  text-decoration: none;
+  border-radius: 50%;
+  border: 2px solid #9b2226;
+  font-weight: bold;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+/* Efek ketika kursor diarahkan ke tombol */
+.social-icon:hover {
+  background-color: #9b2226;
+  color: #ffffff;
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(155, 34, 38, 0.3);
+}
+
+/* Styling Tabel */
+.skills-table {
+  width: 85%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+  border-radius: 8px;
+  overflow: hidden; /* Agar lengkungan border-radius terlihat di tabel */
+}
+
+.skills-table th,
+.skills-table td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.skills-table th {
+  background-color: #9b2226; /* Aksen merah marun */
+  color: #ffffff;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.skills-table tr:hover {
+  background-color: #f8f9fa; /* Efek highlight saat baris tabel disorot */
+}
+
+.skills-table tr:last-child td {
+  border-bottom: none;
+}
+
+footer {
+  margin-top: 50px;
+  font-size: 13px;
+  color: #adb5bd;
+}

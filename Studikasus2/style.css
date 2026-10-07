@@ -1,0 +1,181 @@
+/* CSS Reset Dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Latar Belakang dan Tata Letak Utama */
+body {
+  background-color: #f0f4f8;
+  color: #334155;
+  line-height: 1.6;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Wadah Konten (Card) */
+.container {
+  background-color: #ffffff;
+  max-width: 800px;
+  width: 100%;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+/* Tipografi Judul */
+h1 {
+  color: #0f172a;
+  font-size: 32px;
+  margin-bottom: 15px;
+  border-bottom: 3px solid #3b82f6;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+h2 {
+  color: #1e293b;
+  font-size: 24px;
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+
+/* Paragraf dan Teks */
+p {
+  margin-bottom: 15px;
+  color: #475569;
+}
+
+a {
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Daftar Hobi */
+ul {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  list-style-type: none;
+}
+
+ul li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 8px;
+  color: #475569;
+}
+
+ul li::before {
+  content: "•";
+  color: #3b82f6;
+  font-size: 24px;
+  position: absolute;
+  left: 0;
+  top: -4px;
+}
+
+/* Gambar */
+img {
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  display: block;
+}
+
+/* Formulir */
+form {
+  background-color: #f8fafc;
+  padding: 25px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #1e293b;
+}
+
+/* Tambahan input tel dan textarea */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+textarea {
+  resize: vertical;
+  height: 100px; /* Tinggi kotak alamat */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Layout untuk pilihan Jenis Kelamin */
+.radio-group {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.radio-group label {
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+input[type="submit"] {
+  background-color: #3b82f6;
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+input[type="submit"]:hover {
+  background-color: #2563eb;
+}
+
+/* Kotak Hasil Input PHP */
+.hasil-php {
+  margin-top: 25px;
+  padding: 20px;
+  background-color: #e0f2fe;
+  border-left: 5px solid #0284c7;
+  border-radius: 6px;
+  color: #0369a1;
+}
+
+.hasil-php p {
+  margin-bottom: 5px;
+  color: #0369a1;
+}
